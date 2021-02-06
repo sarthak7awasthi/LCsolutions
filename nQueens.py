@@ -36,5 +36,4 @@ def solveNQueens(n):
     board = [['.' for x in range(n)] for y in range(n)]
     backtrack(board,0,n)
 
-
     
