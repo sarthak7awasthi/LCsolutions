@@ -25,7 +25,9 @@ def valid(board,row,col,n):
 def backtrack(board,row,n):
     
     if row==n:
-        print(board)
+        for i in board:
+            print(i)
+        print()
         return None
     for i in range(n):
         if valid(board,row,i,n):
@@ -35,5 +37,3 @@ def backtrack(board,row,n):
 def solveNQueens(n):
     board = [['.' for x in range(n)] for y in range(n)]
     backtrack(board,0,n)
-
-    
